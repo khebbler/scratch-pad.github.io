@@ -16,32 +16,24 @@
 
 
 function length(string) {
-    // YOUR CODE BELOW HERE //
-
-    
-
-    // YOUR CODE ABOVE HERE //
+    // Returning length of string
+    return string.length;
 }
 
 /**
  * Given an input String, return a new String forced to lowercase.
  */
 function toLowerCase(string) {
-    // YOUR CODE BELOW HERE //
-   
-
-    // YOUR CODE ABOVE HERE //
+    // Returning string converted to lowercase
+    return string.toLowerCase();
 }
 
 /**
  * Given an input String, return a new String forced to uppercase.
  */
 function toUpperCase(string) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Returning string converted to uppercase
+    return string.toUpperCase();
 }
 
 /**
@@ -58,11 +50,8 @@ function toUpperCase(string) {
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Converting string to lowercase & replacing spaces with dashes
+    return string.toLowerCase().replace(' ', '-');
 }
 
 /**
