@@ -141,11 +141,12 @@ function join(stringOne, stringTwo) {
  * TIP: What property of the String do we need to compare?
  */
 function longest(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Comparing length of stringOne and stringTwo
+    if (stringOne.length >= stringTwo.length) {
+        return stringOne; 
+    } else {
+        return stringTwo;
+    }
 }
 
 /**
