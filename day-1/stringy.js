@@ -124,7 +124,7 @@ function concat(stringOne, stringTwo) {
  *      in an Array called args.
  */
 function join(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
+    
     var args = Array.from(arguments);
         // Returning all strings joined together
         return args.join('');
@@ -180,7 +180,16 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // Comparing stringOne and stringTwo 
-
+    if (stringOne < stringTwo) {
+        // Returning -1 if stringOne is lower than stringTwo
+        return -1;
+    } else if (stringOne > stringTwo) {
+        // Returning 1 if stringOne is higher than stringTwo
+        return 1;
+    } else {
+        // Returning 0 if stringOne = stringTwo
+        return 0;
+    }
 
 
 }
