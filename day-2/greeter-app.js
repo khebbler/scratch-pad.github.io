@@ -33,13 +33,31 @@
  *      the exact case.
  */
 
+/*
+I: hour (a number)
+O: a greeting (a string)
+C: must use if, else-if and else statement; tests are case sensitive
+E: N/A ?
+*/
+
 function greeter(hour) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // if hour is 0-11
+    if (hour >= 0 && hour <= 11) {
+        // log Good Morning!
+        console.log("Good Morning!");
+    // if hour is 12-16    
+    } else if (hour >= 12 && hour <= 16) {
+        // log Good Afternoon!
+        console.log("Good Afternoon!");
+    // if hour is 17-21
+    } else if (hour >= 17 && hour <= 21) {
+        // log Good Evening!
+        console.log("Good Evening!");
+    // hour is 22-24
+    } else {
+        // log Good Night!
+        console.log("Good Night!");
+    }
 }
 
 /*
@@ -53,7 +71,10 @@ function greeter(hour) {
  * var hour = today.getHours();
  */
 
+// calling function
 greeter(11);
+// logging to console
+console.log(greeter(11));
 
 
 
