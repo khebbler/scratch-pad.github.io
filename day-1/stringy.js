@@ -157,11 +157,14 @@ function longest(stringOne, stringTwo) {
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 function sortAscending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Comparing stringOne and stringTwo
+    if (stringOne > stringTwo) {
+        return -1;
+    } else if (stringOne < stringTwo) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 
