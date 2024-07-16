@@ -54,7 +54,7 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // Converting string to lowercase & replacing spaces with dashes
-    return string.toLowerCase().replace(' ', '-');
+    return string.toLowerCase().replace(/ /g, '-');
 }
 
 
@@ -94,9 +94,9 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // Converting string to lowercase
-    lowerCaseString = string.toLowerCase();
+    var lowerCaseString = string.toLowerCase();
     // Converting char to lowercase
-    lowerCaseChar = char.toLowerCase();
+    var lowerCaseChar = char.toLowerCase();
         // Checking if the last character in string is equal to char
         return lowerCaseString[lowerCaseString.length - 1] === lowerCaseChar;
 }
