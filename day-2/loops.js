@@ -10,13 +10,19 @@
  * Given an input Array, loop forward over the Array and print its values 
  * using console.log().
  */
+/*
+I: array
+O: print array values to console
+C: must use a forward loop
+E: N/A
+*/
+
 function printArrayValues(array) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  // Looping forward over array
+  for (var i = 0; i < array.length; i++) {
+    // Printing array values to console
+    console.log(array[i]);
+  }
 }
 
 /** 
@@ -24,12 +30,7 @@ function printArrayValues(array) {
  * using console.log().
  */
 function printArrayValuesInReverse(array) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+
 }
 
 /** 
