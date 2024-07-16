@@ -20,6 +20,7 @@ function length(string) {
     return string.length;
 }
 
+
 /**
  * Given an input String, return a new String forced to lowercase.
  */
@@ -28,6 +29,7 @@ function toLowerCase(string) {
     return string.toLowerCase();
 }
 
+
 /**
  * Given an input String, return a new String forced to uppercase.
  */
@@ -35,6 +37,7 @@ function toUpperCase(string) {
     // Returning string converted to uppercase
     return string.toUpperCase();
 }
+
 
 /**
  * Given an input String, return a new String forced to dash-case.
@@ -53,6 +56,7 @@ function toDashCase(string) {
     // Converting string to lowercase & replacing spaces with dashes
     return string.toLowerCase().replace(' ', '-');
 }
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -75,6 +79,7 @@ function beginsWith(string, char) {
         return lowerCaseString[0] === lowerCaseChar;
 }
 
+
 /**
  * Given an input String and a single character, return true if the String
  * ends with the character, false otherwise. The Function is case insensitive.
@@ -96,6 +101,7 @@ function endsWith(string, char) {
         return lowerCaseString[lowerCaseString.length - 1] === lowerCaseChar;
 }
 
+
 /**
  * Given two input Strings, return the Strings concatenated into one.
  *
@@ -105,6 +111,7 @@ function concat(stringOne, stringTwo) {
     // Concatenating stringOne and stringTwo
     return stringOne + stringTwo;
 }
+
 
 /**
  * Given any number of Strings, return all of them joined together.
@@ -119,11 +126,10 @@ function concat(stringOne, stringTwo) {
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-    
-
-
-    // YOUR CODE ABOVE HERE //
+        // Returning all strings joined together
+        return args.join('');
 }
+
 
 /**
  * Given two Strings, return the longest of the two.
