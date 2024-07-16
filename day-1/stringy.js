@@ -13,7 +13,12 @@
  * work?
  */
 
-
+/*
+I: string
+O: length of string
+C: N/A
+E: N/A
+*/
 
 function length(string) {
     // Returning length of string
@@ -24,6 +29,13 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+/*
+I: string
+O: a new string forced to lowercase
+C: N/A
+E: N/A
+*/
+
 function toLowerCase(string) {
     // Returning string converted to lowercase
     return string.toLowerCase();
@@ -33,6 +45,13 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+/*
+I: string
+O: a new string forced to uppercase
+C: N/A
+E: N/A
+*/
+
 function toUpperCase(string) {
     // Returning string converted to uppercase
     return string.toUpperCase();
@@ -52,6 +71,13 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+/*
+I: string
+O: a new string forced to dash-case
+C: N/A
+E: N/A
+*/
+
 function toDashCase(string) {
     // Converting string to lowercase & replacing spaces with dashes
     return string.toLowerCase().replace(/ /g, '-');
@@ -70,6 +96,13 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I: string, char
+O: a boolean value 
+C: function is case insensitive
+E: N/A
+*/
+
 function beginsWith(string, char) {
     // Converting string to lowercase
     var lowerCaseString = string.toLowerCase();
@@ -92,6 +125,13 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I: string, char
+O: a boolean value
+C: function is case insensitive
+E: N/A
+*/
+
 function endsWith(string, char) {
     // Converting string to lowercase
     var lowerCaseString = string.toLowerCase();
@@ -107,6 +147,13 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+/*
+I: stringOne, stringTwo
+O: a string that is the results of concatenating stringOne & stringTwo
+C: must use the '+' operator
+E: N/A
+*/
+
 function concat(stringOne, stringTwo) {
     // Concatenating stringOne and stringTwo
     return stringOne + stringTwo;
@@ -123,6 +170,13 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+/*
+I: any number of strings
+O: a string that is the result of joining all of them together
+C: N/A
+E: N/A
+*/
+
 function join(stringOne, stringTwo) {
     
     var args = Array.from(arguments);
@@ -140,6 +194,13 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+/*
+I: stringOne, stringTwo
+O: the longest of the the two strings
+C: N/A
+E: N/A
+*/
+
 function longest(stringOne, stringTwo) {
     // Comparing length of stringOne and stringTwo
     if (stringOne.length >= stringTwo.length) {
@@ -156,6 +217,13 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I: stringOne, stringTwo
+O: a number
+C: N/A
+E: N/A
+*/
+
 function sortAscending(stringOne, stringTwo) {
     // Comparing stringOne and stringTwo
     if (stringOne > stringTwo) {
@@ -178,6 +246,13 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I: stringOne, stringTwo
+O: a number
+C: N/A
+E: N/A
+*/
+
 function sortDescending(stringOne, stringTwo) {
     // Comparing stringOne and stringTwo 
     if (stringOne < stringTwo) {

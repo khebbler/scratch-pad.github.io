@@ -20,8 +20,11 @@
  */
 
 function reverseString(input) {
-    // YOUR CODE GOES BELOW HERE //
-    
+    // Initializing storage variable
+    var reversedString = '';
+
+
+    for (var i = 0; i < input.length - 1; i++);
     
     
     
