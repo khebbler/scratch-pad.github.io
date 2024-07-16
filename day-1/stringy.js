@@ -102,11 +102,8 @@ function endsWith(string, char) {
  * TIP: What's the operator to concatenate two Strings?
  */
 function concat(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Concatenating stringOne and stringTwo
+    return stringOne + stringTwo;
 }
 
 /**
@@ -122,6 +119,7 @@ function concat(stringOne, stringTwo) {
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
+    
 
 
     // YOUR CODE ABOVE HERE //
