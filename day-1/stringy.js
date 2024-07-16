@@ -67,11 +67,12 @@ function toDashCase(string) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 function beginsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
-    
-
-    // YOUR CODE ABOVE HERE //
+    // Converting string to lowercase
+    var lowerCaseString = string.toLowerCase();
+    // Converting char to lowercase
+    var lowerCaseChar = char.toLowerCase();
+        // Checking if first character in string is equal to char
+        return lowerCaseString[0] === lowerCaseChar;
 }
 
 /**
@@ -87,11 +88,12 @@ function beginsWith(string, char) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 function endsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // Converting string to lowercase
+    lowerCaseString = string.toLowerCase();
+    // Converting char to lowercase
+    lowerCaseChar = char.toLowerCase();
+        // Checking if the last character in string is equal to char
+        return lowerCaseString[lowerCaseString.length - 1] === lowerCaseChar;
 }
 
 /**
