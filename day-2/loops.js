@@ -54,6 +54,12 @@ C: must use a loop
 E: N/A
 */
 
+/*
+function getObjectKeys(object) {
+  Object.keys(object);
+}
+*/
+
 function getObjectKeys(object) {
   // Initializing storage array
   var storageArray = [];
@@ -68,6 +74,7 @@ function getObjectKeys(object) {
   // Returning storageArray
   return storageArray;
 }
+
 
 /** 
  * Given an input Object, loop over the Object and print its keys 
@@ -88,6 +95,17 @@ function printObjectKeys(object) {
       // Printing object keys to console
       console.log(key);
     }
+  }
+}
+
+/*
+function printObjectKeys(object) {
+  // Initializing keys variable
+  var keys = Object.keys(object);
+  // Looping through array of keys
+  for (var i = 0; i , keys.length; i++) {
+    // Printing object keys to console
+    console.log(keys[i]);
   }
 }
 
@@ -169,14 +187,25 @@ function getObjectLength(object) {
  */
 /*
 I: object
-O: 
+O: print object values to console in reverse
 C: must use a loop
 E: N/A
 */
 
 function printObjectValuesInReverse(object) {
   
-}
+    // Get the keys of the object
+    var keys = Object.keys(object);
+  
+    // Loop through the keys in reverse order
+    for (var i = keys.length - 1; i >= 0; i--) {
+      // Get the key
+      var key = keys[i];
+      // Print the value associated with the key
+      console.log(object[key]);
+    }
+  }
+
 
 
 
