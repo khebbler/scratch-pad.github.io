@@ -14,8 +14,22 @@
  * 
  * HINT: There is a method that can help with this.
  */
+/*
+I: value
+O: a boolean value 
+C: must use Array.isArray() method
+E: N/A
+*/
+
 function isArray(value) {
-    // YOUR CODE BELOW HERE //
+    // Checking if value is an array
+    if (Array.isArray(value)) {
+        // If value is an array return true
+        return true;
+    // Otherwise return false    
+    } else {
+        return false;
+    }
     
     
     
@@ -41,6 +55,8 @@ function isObject(value) {
     // YOUR CODE ABOVE HERE //
 }
 
+isObject ({a: 1, b: 2}); true
+isObject
 
 
 /** 
