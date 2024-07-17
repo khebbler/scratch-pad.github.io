@@ -47,11 +47,26 @@ function printArrayValuesInReverse(array) {
 /** 
  * Given an input Object, return an Array containing the Object keys.
  */
+/*
+I: object
+O: an array containing the object keys
+C: must use a loop
+E: N/A
+*/
+
 function getObjectKeys(object) {
-  // 
+  // Initializing storage array
+  var storageArray = [];
+  // Looping over object
   for (var key in object) {
-    return key;
+    // Checking if object has key property
+    if (object.hasOwnProperty(key)) {
+      // Adding key to storageArray
+      storageArray.push(key);
+    }
   }
+  // Returning storageArray
+  return storageArray;
 }
 
 /** 
@@ -64,6 +79,7 @@ O: print object keys to the console
 C: must use for-in loop
 E: N/A
 */
+
 function printObjectKeys(object) {
   // Looping over object
   for (var key in object) {
@@ -78,13 +94,26 @@ function printObjectKeys(object) {
 /** 
  * Given an input Object, return an Array containing the Object's values.
  */
+/*
+I: object
+O: return an array containing the object's values
+C: must use a loop
+E: N/A
+*/
+
 function getObjectValues(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+// Initializing value array
+var value = [];
+  // Looping over object
+  for (var key in object) {
+    // Checking if object has property
+    if (object.hasOwnProperty(key)) {
+      // Adding key to value
+      value.push(object[key])
+    }
+  }
+  // Returning value
+  return value;
 }
 
 /** 
