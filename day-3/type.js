@@ -17,7 +17,7 @@
 /*
 I: value
 O: a boolean value 
-C: must use Array.isArray() method
+C: use Array.isArray() method
 E: N/A
 */
 
@@ -32,6 +32,7 @@ function isArray(value) {
     }
 }
 
+
 /** 
  * Given an input value, return true if the value is an Object intended as a 
  * collection, false if otherwise.
@@ -41,17 +42,33 @@ function isArray(value) {
  * with typeof.
  * 
  */
-function isObject(value) {
-    // YOUR CODE BELOW HERE //
-    
+/*
+I: value
+O: a boolean value 
+C: N/A 
+E: N/A
+*/
 
-    
-    
-    // YOUR CODE ABOVE HERE //
+function isObject(value) {
+    // Checking if value is an object &  not null, array, or date
+    if (typeof value === 'object' && value !== null && !Array.isArray(value) && !(value instanceof Date)) {
+        // If value is an object return true
+        return true;
+    // Otherwise return false    
+    } else {
+        return false;
+    }
 }
 
-isObject ({a: 1, b: 2}); true
-isObject
+/* Why won't this work??
+function isObject(value) {
+    if (value instanceof Object) {
+        return true;
+    } else {
+        return false;
+    }
+}
+*/
 
 
 /** 
@@ -60,14 +77,27 @@ isObject
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  */
+/*
+I: value
+O: a boolean value 
+C: N/A 
+E: N/A
+*/
 function isCollection(value) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Checking if value is an array
+    if (Array.isArray(value)) {
+        // If value is an array return true
+        return true;
+    // Checking if value is an object    
+    } else if (typeof value === 'object' && value !== null && !Array.isArray(value) && !(value instanceof Date)) {
+        // If value is an object return true
+        return true;
+    // Otherwise, return false    
+    } else {
+        return false;
+    }
 }
+
 
 /**
  * Given an input value, return the type of the value as a String
