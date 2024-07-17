@@ -193,15 +193,13 @@ E: N/A
 */
 
 function printObjectValuesInReverse(object) {
-  
-    // Get the keys of the object
+    // Initializing keys variable, value is keys of object
     var keys = Object.keys(object);
-  
-    // Loop through the keys in reverse order
+    // Looping through keys in reverse
     for (var i = keys.length - 1; i >= 0; i--) {
-      // Get the key
+      // Initializing key variable
       var key = keys[i];
-      // Print the value associated with the key
+      // Printing values of key to console
       console.log(object[key]);
     }
   }
