@@ -57,7 +57,7 @@ E: N/A
 function getObjectKeys(object) {
   // Initializing storage array
   var storageArray = [];
-  // Looping over object
+  // Looping through object
   for (var key in object) {
     // Checking if object has key property
     if (object.hasOwnProperty(key)) {
@@ -81,7 +81,7 @@ E: N/A
 */
 
 function printObjectKeys(object) {
-  // Looping over object
+  // Looping through object
   for (var key in object) {
     // Checking if object has key property
     if (object.hasOwnProperty(key)) {
@@ -104,7 +104,7 @@ E: N/A
 function getObjectValues(object) {
 // Initializing value array
 var value = [];
-  // Looping over object
+  // Looping through object
   for (var key in object) {
     // Checking if object has property
     if (object.hasOwnProperty(key)) {
@@ -128,7 +128,7 @@ E: N/A
 */
 
 function printObjectValues(object) {
-  // Looping over object
+  // Looping through object
   for (var key in object) {
     // Checking if object has key property
     if (object.hasOwnProperty(key)) {
@@ -141,13 +141,24 @@ function printObjectValues(object) {
 /** 
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
+/*
+I: object
+O: number of key/value pairs stored in object
+C: must use a loop
+E: N/A
+*/
+
 function getObjectLength(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  // Looping through object's properties
+  for (var key in object) {
+    // Checking if object has key property
+    if (object.hasOwnProperty(key)) {
+      // Incrementing for each property
+      count++
+    }
+  }
+  // Returning count
+  return count;
 }
 
 /** 
