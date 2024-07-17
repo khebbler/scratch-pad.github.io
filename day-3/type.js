@@ -30,11 +30,6 @@ function isArray(value) {
     } else {
         return false;
     }
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
 }
 
 /** 
