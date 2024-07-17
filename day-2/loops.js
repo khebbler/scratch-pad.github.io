@@ -120,13 +120,22 @@ var value = [];
  * Given an input Object, loop over the Object and print its values 
  * using console.log().
  */
+/*
+I: object
+O: print object values to console
+C: must use a loop
+E: N/A
+*/
+
 function printObjectValues(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  // Looping over object
+  for (var key in object) {
+    // Checking if object has key property
+    if (object.hasOwnProperty(key)) {
+      // Printing object value to console
+      console.log(object[key]);
+    }
+  }
 }
 
 /** 
