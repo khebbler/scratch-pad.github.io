@@ -118,13 +118,43 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
+/*
+I: value
+O: a string representing the type of value
+C: N/A 
+E: N/A
+*/
 function typeOf(value) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // If value is a string return string
+    if (typeof value === 'string') {
+        return "string";
+    // If value is an array return array    
+    } else if (Array.isArray(value)) {
+        return "array";
+    // If value is an object return object    
+    } else if (typeof value === 'object' && value !== null && !Array.isArray(value) && !(value instanceof Date)) {
+        return "object";
+    // If value is undefined return undefined    
+    } else if (typeof value === 'undefined') {
+        return "undefined";
+    // If value is a number return number    
+    } else if (typeof value === 'number') {
+        return "number";
+    // If value is a boolean return boolean    
+    } else if (typeof value === 'boolean') {
+        return "boolean";
+    // If value is null return null    
+    } else if (value === null) {
+        return "null";
+    // If value is a function return function    
+    } else if (typeof value === 'function') {
+        return "function";
+    // If value is a date return date    
+    } else if (value instanceof Date) {
+        return "date";
+    }
+
+
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
