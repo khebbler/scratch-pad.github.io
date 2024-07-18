@@ -11,12 +11,18 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+/*
+I: base
+O: a function which tests whether a given value is greater than the abse
+C: N/A
+E: N/A
+*/
+
 function createGreaterThanFilter(base) {
-    // YOUR CODE BELOW HERE //
-    
-   
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether value is greater than base
+    return function(value) {
+         return value > base;
+    }
 }
 
 /** 

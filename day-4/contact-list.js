@@ -20,7 +20,7 @@
  *         returns the contact object if found in the contacts-list, or, 
  *         undefined if the fullName does not match any contacts in the list.
  *      4. removeContact(contact): takes a contact object to be removed from 
- *         the contact-list.
+ *         the contact-list. (splice!)
  *      5. add a printAllContactNames() Function to your makeContactList() factory. The printAllContactNames() Function should 
  *         return a String formated with all the full-names of the separated 
  *         with a line-break, like so:
@@ -34,6 +34,7 @@
  */
 
 // YOUR CODE GOES BELOW HERE //
+// pass this test first //
 function makeContact(id, nameFirst, nameLast) {
     
 } 
@@ -47,8 +48,12 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
+        // create a series of methods that allow us to .. //
         length: function() {
             return contacts.length;
+        },
+        addContact: function(contact) {
+            contacts.push(contact);
         }
     }
 }
