@@ -13,7 +13,7 @@
  */
 /*
 I: base
-O: a function which tests whether a given value is greater than the abse
+O: a function that tests whether a given value is greater than the base
 C: N/A
 E: N/A
 */
@@ -22,7 +22,7 @@ function createGreaterThanFilter(base) {
     // Returning function that tests whether value is greater than base
     return function(value) {
          return value > base;
-    }
+    };
 }
 
 /** 
@@ -30,13 +30,19 @@ function createGreaterThanFilter(base) {
  * return a Function that tests whether a given value is less than the 
  * base. (test means return true or false)
  */
+/*
+I: base
+O: a function that tests whether a given value is less than the base
+C: N/A
+E: N/A
+*/
+
 function createLessThanFilter(base) {
-    // YOUR CODE BELOW HERE //
-    
-   
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether value is less than base
+    return function(value) {
+        return value < base;
+    };
+
 }
 
 /** 
