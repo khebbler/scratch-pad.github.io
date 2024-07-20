@@ -50,13 +50,18 @@ function createLessThanFilter(base) {
  * Function that tests whether a given String starts with the startsWith 
  * character.
  */
+/*
+I: startsWith
+O: a function that tests whether a given String starts with the startsWith character
+C: N/A
+E: N/A
+*/
+
 function createStartsWithFilter(startsWith) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // 
+    return function(string) {
+        return string.startsWith(startsWith);
+    };
 }
 
 /** 
@@ -66,10 +71,9 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return function(string) {
+        return string.endsWith(endsWith);
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -80,13 +84,25 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+/*
+I: strings, modify
+O: the array of strings modified
+C: N/A
+E: N/A
+*/
+
 function modifyStrings(strings, modify) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Initializing variable for collection
+    var modifiedStrings = [];
+    // Looping over strings
+    for (var i = 0; i < strings.length; i++) {
+        // Passing each string to modify function
+        var modifiedString = modify(strings[i]);
+        // Pusing modified string to array
+        modifiedStrings.push(modifiedString);
+    }
+    // Returning modifiedStrings
+    return modifiedStrings;
 }
 
 
