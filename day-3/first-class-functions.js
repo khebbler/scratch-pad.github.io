@@ -116,13 +116,24 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+I: an Array (strings), a Function (test)
+O: a boolean value
+C: N/A
+E: N/A
+*/
+
 function allStringsPass(strings, test) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Looping over strings
+    for (var i = 0; i < strings.length; i++) {
+        // Testing fuction on String
+        if (!test(strings[i])) {
+            // Returning false if String fails
+            return false;
+        }
+    }
+    // Returning true if String passes
+    return true;
 }
 
 
