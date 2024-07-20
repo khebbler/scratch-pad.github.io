@@ -51,7 +51,7 @@ function createLessThanFilter(base) {
  * character.
  */
 /*
-I: startsWith
+I: a single character, startsWith
 O: a function that tests whether a given String starts with the startsWith character
 C: N/A
 E: N/A
@@ -69,6 +69,13 @@ function createStartsWithFilter(startsWith) {
  * Function that tests whether a given String ends with the endsWith 
  * character.
  */
+/*
+I: a single character, endsWith
+O: a function that tests whether a given String ends with the endsWith character
+C: N/A
+E: N/A
+*/
+
 function createEndsWithFilter(endsWith) {
     // Returning function that tests whether string ends with the endsWith character
     return function(string) {
