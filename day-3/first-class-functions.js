@@ -58,9 +58,9 @@ E: N/A
 */
 
 function createStartsWithFilter(startsWith) {
-    // 
+    // Returning function that tests whether string starts with the startsWith character
     return function(string) {
-        return string.startsWith(startsWith);
+        return string.toLowerCase().startsWith(startsWith.toLowerCase());
     };
 }
 
@@ -70,11 +70,11 @@ function createStartsWithFilter(startsWith) {
  * character.
  */
 function createEndsWithFilter(endsWith) {
-    // YOUR CODE BELOW HERE //
+    // Returning function that tests whether string ends with the endsWith character
     return function(string) {
         return string.endsWith(endsWith);
     }
-    // YOUR CODE ABOVE HERE //
+   
 }
 
 /** 
