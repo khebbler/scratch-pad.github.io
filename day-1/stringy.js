@@ -88,7 +88,7 @@ function toUpperCase(string) {
 
 /*
 I: a string
-O: returns a new string converted to dash-case
+O: returns a new string converted to dash-case and lowercase
 C: N/A
 E: N/A
 */
@@ -114,10 +114,27 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/*
+I: a string, a single character char
+O: returns a boolean value
+C: function is case insensitive 
+E: N/A
+*/
+
+
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    
+    // converting string and char to lowercase
+    // checking if string begins with char
+    if (string[0].toLowerCase() === char.toLowerCase()) {
+        // returning true
+        return true;
+    // otherwise returning false
+    } else {
+        return false;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
