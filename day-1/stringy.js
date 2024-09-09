@@ -151,10 +151,29 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/*
+I: a string, a single character char
+O: returns a boolean value
+C: function is case insensitive 
+E: N/A
+*/
+
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
+    // converting string and char to lowercase
+    string = string.toLowerCase();
+    char = char.toLowerCase();
 
+    // checking if string ends with char
+    if (string[string.length - 1] === char) {
+        // returning true
+        return true;
+    // otherwise, returning false    
+    } else {
+        return false;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
