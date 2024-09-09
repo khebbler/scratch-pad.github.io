@@ -183,10 +183,19 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+
+/*
+I: two input strings
+O: the strings concatenated into one string
+C: N/A
+E: N/A
+*/
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+    // concatenating stringOne and stringTwo using concat method
+    return stringOne.concat(stringTwo)
 
     // YOUR CODE ABOVE HERE //
 }
