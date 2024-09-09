@@ -281,9 +281,33 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/*
+I: two strings, stringOne, stringTwo
+O: a number
+C: N/A
+E: N/A
+*/
+
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
+    // converting strings to lowercase
+    stringOne = stringOne.toLowerCase();
+    stringTwo = stringTwo.toLowerCase();
+
+    // if stringOne is alphabetically higher than stringTwo
+    if (stringOne < stringTwo) {
+        return 1;
+    // if stringOne is alphabetically lower than stringTwo
+    } else if (stringOne > stringTwo) {
+        // returning -1
+        return -1;
+    // if stringOne and stringTwo are equal
+    } else {
+        // return 0
+        return 0;
+    }
 
 
     // YOUR CODE ABOVE HERE //
@@ -299,6 +323,25 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
+        // converting strings to lowercase
+        stringOne = stringOne.toLowerCase();
+        stringTwo = stringTwo.toLowerCase();
+
+        // if stringOne is alphabetically lower than stringTwo
+        if (stringOne < stringTwo) {
+            // returning -1
+            return -1;
+        // if stringOne is alphabetically higher than stringTwo
+        } else if (stringOne > stringTwo) {
+            // returning 1
+            return 1;
+        // if stringOne and stringTwo are equal
+        } else {
+            // returning 0
+            return 0;
+        }
+    
 
 
 
