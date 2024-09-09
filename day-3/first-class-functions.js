@@ -11,59 +11,77 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+/*
+I: base
+O: a function that tests whether a given value is greater than the base
+C: N/A
+E: N/A
+*/
+
 function createGreaterThanFilter(base) {
-    // YOUR CODE BELOW HERE //
-    
-   
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether value is greater than base
+    return function(value) {
+         return value > base;
+    };
 }
 
 /** 
  * Given an input base to test against, which could be a String or Number, 
  * return a Function that tests whether a given value is less than the 
  * base. (test means return true or false)
- * 
  */
+/*
+I: base
+O: a function that tests whether a given value is less than the base
+C: N/A
+E: N/A
+*/
+
 function createLessThanFilter(base) {
-    // YOUR CODE BELOW HERE //
-    
-  
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether value is less than base
+    return function(value) {
+        return value < base;
+    };
+
 }
 
 /** 
  * Given a startsWith character, which will be a single character, return a 
  * Function that tests whether a given String starts with the startsWith 
  * character.
- * 
- * This function needs to be case insensitive.
  */
+/*
+I: a single character, startsWith
+O: a function that tests whether a given String starts with the startsWith character
+C: N/A
+E: N/A
+*/
+
 function createStartsWithFilter(startsWith) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether string starts with the startsWith character
+    return function(string) {
+        return string.toLowerCase().startsWith(startsWith.toLowerCase());
+    };
 }
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
  * Function that tests whether a given String ends with the endsWith 
  * character.
- * 
- * This function needs to be case insensitive.
  */
+/*
+I: a single character, endsWith
+O: a function that tests whether a given String ends with the endsWith character
+C: N/A
+E: N/A
+*/
+
 function createEndsWithFilter(endsWith) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Returning function that tests whether string ends with the endsWith character
+    return function(string) {
+        return string.toLowerCase().endsWith(endsWith.toLowerCase());
+    }
+   
 }
 
 /** 
@@ -73,15 +91,26 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
-function modifyStrings(strings, modify) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
-}
+/*
+I: strings, modify
+O: the array of strings modified
+C: N/A
+E: N/A
+*/
 
+function modifyStrings(strings, modify) {
+    // Initializing variable for collection
+    var modifiedStrings = [];
+    // Looping over strings
+    for (var i = 0; i < strings.length; i++) {
+        // Passing each string to modify function
+        var modifiedString = modify(strings[i]);
+        // Pusing modified string to array
+        modifiedStrings.push(modifiedString);
+    }
+    // Returning modifiedStrings
+    return modifiedStrings;
+}
 
 
 
@@ -94,16 +123,25 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+I: an Array (strings), a Function (test)
+O: a boolean value
+C: N/A
+E: N/A
+*/
+
 function allStringsPass(strings, test) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // Looping over strings
+    for (var i = 0; i < strings.length; i++) {
+        // Testing fuction on String
+        if (!test(strings[i])) {
+            // Returning false if String fails
+            return false;
+        }
+    }
+    // Returning true if String passes
+    return true;
 }
-
-
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

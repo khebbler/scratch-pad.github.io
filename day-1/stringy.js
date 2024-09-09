@@ -13,13 +13,21 @@
  * work?
  */
 
+/*
+I: a string
+O: returns number representing length of the input string
+C: N/A
+E: N/A
+*/
+
 
 
 
 function length(string) {
     // YOUR CODE BELOW HERE //
 
-   
+    // returns the string property of the input string
+    return string.length;
     
     // YOUR CODE ABOVE HERE //
 }
@@ -27,9 +35,19 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+
+/*
+I: a string
+O: returns a new string converted to lowercase
+C: N/A
+E: N/A
+*/
+
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
    
+    // converting input string to lowercase
+    return string.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -37,10 +55,19 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+
+/*
+I: a string
+O: returns a new string converted to uppercase
+C: N/A
+E: N/A
+*/
+
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+    // returning input string converted to uppercase
+    return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
 }

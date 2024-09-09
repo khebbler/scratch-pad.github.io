@@ -3,7 +3,7 @@
 'use strict';
 
 /**
- * 4: Contact List // Contacts
+ * 4: Contact List
  * 
  *  a. Create a factory Function called makeContact(id, nameFirst, nameLast) 
  *     that returns a contact object.
@@ -20,7 +20,7 @@
  *         returns the contact object if found in the contacts-list, or, 
  *         undefined if the fullName does not match any contacts in the list.
  *      4. removeContact(contact): takes a contact object to be removed from 
- *         the contact-list.
+ *         the contact-list. (splice!)
  *      5. add a printAllContactNames() Function to your makeContactList() factory. The printAllContactNames() Function should 
  *         return a String formated with all the full-names of the separated 
  *         with a line-break, like so:
@@ -32,12 +32,22 @@
  *          WARNING: To pass this test, the LAST full name should have NO
  *          new-line character added after it!
  */
+/*
+I:
+O:
+C:
+E:
+*/
 
 // YOUR CODE GOES BELOW HERE //
+// pass this test first //
 function makeContact(id, nameFirst, nameLast) {
-    
+    return {
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast
+    };
 } 
-
 
 
 function makeContactList() {
@@ -48,11 +58,34 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
-       
-    }
+
+        length: function() {
+            return contacts.length;
+        },
+        addContact: function(contact) {
+            contacts.push(contact);
+        },
+        findContact: function(fullName) {
+            for (var i = 0; i < contacts.length; i++)
+            if (fullName === contacts[i].nameFirst + ' ' + contacts[i].nameLast) {
+                return contacts[i];
+            }
+        },
+        removeContact: function(contact) {
+            for (var i = 0; i < contacts.length; i++) {
+                return contacts.splice([i], 1);
+            }
+        },
+        printAllContactNames: function() {
+            var fullNames = contacts.map(function(contact) {
+                return contact.nameFirst + ' ' + contact.nameLast;
+            });
+            return fullNames.join('\n');
+        }
+      
+    };
 }
 
-makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
 
 
