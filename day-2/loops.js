@@ -44,6 +44,8 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
+  // returning an Array containing the Object keys using Object.keys method
+  return Object.keys(object);
   
 
   // YOUR CODE ABOVE HERE //
