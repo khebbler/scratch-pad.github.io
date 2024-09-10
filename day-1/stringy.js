@@ -200,6 +200,12 @@ function concat(stringOne, stringTwo) {
     // YOUR CODE ABOVE HERE //
 }
 
+function concat1(stringOne, stringTwo) {
+
+    // concatenating stringOne and stringTwo using concat operator
+    return stringOne += stringTwo;
+}
+
 /**
  * Given any number of Strings, return all of them joined together.
  *
