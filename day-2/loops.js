@@ -99,7 +99,8 @@ function printObjectValues(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
+  // returning the length of the array of keys in input Object
+  return Object.keys(object).length;
   
   
   
