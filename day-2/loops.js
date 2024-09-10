@@ -71,8 +71,8 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+  // returning an array containing the Object's values using Object.values method
+  return Object.values(object);
   
   
   // YOUR CODE ABOVE HERE //
