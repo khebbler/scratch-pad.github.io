@@ -84,8 +84,11 @@ function getObjectValues(object) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+  // looping over input object
+  for (var key in object) {
+    // printing Object's values to console
+    console.log(object[key]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
