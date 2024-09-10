@@ -20,7 +20,7 @@ function printArrayValues(array) {
   }
   
   
-  
+
   // YOUR CODE ABOVE HERE //
 }
 
@@ -30,10 +30,12 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // looping backwards over input array
+  for (var i = array.length - 1; i >= 0; i--) {
+    // printing values to console
+    console.log(array[i]);
+  }
+   
   // YOUR CODE ABOVE HERE //
 }
 
