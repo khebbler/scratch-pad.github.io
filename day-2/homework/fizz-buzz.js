@@ -12,8 +12,25 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
-
+    for (var i = 1; i <= 100; i++) {
+        // if number is a multiple of 3 and 5
+        if (i % 3 === 0 && i % 5 === 0) {
+            // print FizzBuzz
+            console.log("FizzBuzz");
+        // if number is a multiple of 3     
+        } else if (i % 3 === 0) {
+            // print Fizz
+            console.log("Fizz");
+        // if number is a multiple of 5     
+        } else if (i % 5 === 0) {
+            // print Buzz
+            console.log("Buzz");
+        } else {
+            // print the rest of the numbers
+            console.log(i);
+        }
+     
+    }
 
     // YOUR CODE GOES ABOVE HERE //
 }
