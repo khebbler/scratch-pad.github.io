@@ -17,8 +17,11 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
+    // Checking if input value is an array
     if (Array.isArray(value) === true) {
+        // returning true if value is an array
         return true;
+    // otherwise return false
     } else {
         return false;
     }
