@@ -45,7 +45,7 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+
     // if value is an object
         // value is not null
             // value is not an Array
@@ -79,6 +79,19 @@ isObject(new Date()); // false
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
+
+    // ******(typeof value === 'object': Confirms the value is an object or array)
+    
+    // if value is an object or array 
+        // value is not null
+                // value is not a Date
+                if (typeof value === "object" && value !== null && !(value instanceof Date)) {
+                    // returning true
+                    return true;
+                // otherwise return false
+                } else {
+                    return false;
+                }
     
     
     
