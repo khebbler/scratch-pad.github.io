@@ -62,7 +62,11 @@ E: N/A
 */
 
 function createStartsWithFilter(startsWith) {
-  
+
+    return function(string) {
+        return string[0] === startsWith;
+        }
+
 }
 
 /** 
@@ -78,6 +82,11 @@ E: N/A
 */
 
 function createEndsWithFilter(endsWith) {
+
+    return function(string) {
+        return string[string.length - 1] === endsWith;
+      };
+    
 
 
 }
@@ -97,6 +106,18 @@ E: N/A
 */
 
 function modifyStrings(strings, modify) {
+
+    // Initializing storage variable for modified strings
+    var modifiedStrings = [];
+
+    // Looping over strings array
+    for (var i = 0; i < strings.length; i++) {
+        // modifying strings and pushing to modifiedStrings array
+        modifiedStrings.push(modify(strings[i]))
+
+    }
+    // returning modifiedStrings array
+    return modifiedStrings;
    
 }
 
