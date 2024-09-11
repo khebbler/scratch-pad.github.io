@@ -19,10 +19,7 @@ E: N/A
 */
 
 function createGreaterThanFilter(base) {
-    // Returning function that tests whether value is greater than base
-    return function(value) {
-         return value > base;
-    };
+   
 }
 
 /** 
@@ -38,10 +35,7 @@ E: N/A
 */
 
 function createLessThanFilter(base) {
-    // Returning function that tests whether value is less than base
-    return function(value) {
-        return value < base;
-    };
+ 
 
 }
 
@@ -58,10 +52,7 @@ E: N/A
 */
 
 function createStartsWithFilter(startsWith) {
-    // Returning function that tests whether string starts with the startsWith character
-    return function(string) {
-        return string.toLowerCase().startsWith(startsWith.toLowerCase());
-    };
+  
 }
 
 /** 
@@ -77,11 +68,8 @@ E: N/A
 */
 
 function createEndsWithFilter(endsWith) {
-    // Returning function that tests whether string ends with the endsWith character
-    return function(string) {
-        return string.toLowerCase().endsWith(endsWith.toLowerCase());
-    }
-   
+
+
 }
 
 /** 
@@ -99,17 +87,7 @@ E: N/A
 */
 
 function modifyStrings(strings, modify) {
-    // Initializing variable for collection
-    var modifiedStrings = [];
-    // Looping over strings
-    for (var i = 0; i < strings.length; i++) {
-        // Passing each string to modify function
-        var modifiedString = modify(strings[i]);
-        // Pusing modified string to array
-        modifiedStrings.push(modifiedString);
-    }
-    // Returning modifiedStrings
-    return modifiedStrings;
+   
 }
 
 
@@ -131,16 +109,7 @@ E: N/A
 */
 
 function allStringsPass(strings, test) {
-    // Looping over strings
-    for (var i = 0; i < strings.length; i++) {
-        // Testing fuction on String
-        if (!test(strings[i])) {
-            // Returning false if String fails
-            return false;
-        }
-    }
-    // Returning true if String passes
-    return true;
+   
 }
 
 

@@ -17,7 +17,11 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    if (Array.isArray(value) === true) {
+        return true;
+    } else {
+        return false;
+    }
     
     
     // YOUR CODE ABOVE HERE //
