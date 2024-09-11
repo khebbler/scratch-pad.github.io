@@ -19,6 +19,11 @@ E: N/A
 */
 
 function createGreaterThanFilter(base) {
+    // returning a function with a value parameter
+    return function(value) {
+        // testing whether given value is greater than the base
+        return value > base;
+    }
    
 }
 
