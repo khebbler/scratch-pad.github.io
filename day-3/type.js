@@ -120,8 +120,23 @@ function isCollection(value) {
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+
+    // if input value is null
+    if (value === null) {
+        // return null
+        return "null"; 
+    // if input value is an Array      
+    } else if (Array.isArray(value) === true) {
+        // return array
+        return "array";
+    // if input value is a date    
+    } else if (value instanceof Date === true) {
+        // return date
+        return "date";
+    // return values that can be checked with typeof operator 
+    } else {
+        return typeof value;
+    }
     
     
     // YOUR CODE ABOVE HERE //
