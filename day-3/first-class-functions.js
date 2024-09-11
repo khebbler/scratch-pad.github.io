@@ -40,6 +40,11 @@ E: N/A
 */
 
 function createLessThanFilter(base) {
+    // returning function with value as a parameter
+    return function(value) {
+        // testing whether input value is less than base
+        return value < base;
+    }
  
 
 }
