@@ -46,14 +46,30 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
+    // if value is an object
+        // value is not null
+            // value is not an Array
+                // value is not a Date
+    if (typeof value === "object" && value !== null && !Array.isArray(value) && !(value instanceof Date)) {
+        // returning true
+        return true;
+    // otherwise return false
+    } else {
+        return false;
+    }
 
-    
-    
-    
+
     // YOUR CODE ABOVE HERE //
 }
 
 
+
+/*
+isObject({ a: 1, b: 2}); // true
+isObject([1, 2, 3]); // false
+isObject(null); // false
+isObject(new Date()); // false
+*/
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 
