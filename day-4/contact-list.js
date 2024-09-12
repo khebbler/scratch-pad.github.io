@@ -62,26 +62,7 @@ function makeContactList() {
         length: function() {
             return contacts.length;
         },
-        addContact: function(contact) {
-            contacts.push(contact);
-        },
-        findContact: function(fullName) {
-            for (var i = 0; i < contacts.length; i++)
-            if (fullName === contacts[i].nameFirst + ' ' + contacts[i].nameLast) {
-                return contacts[i];
-            }
-        },
-        removeContact: function(contact) {
-            for (var i = 0; i < contacts.length; i++) {
-                return contacts.splice([i], 1);
-            }
-        },
-        printAllContactNames: function() {
-            var fullNames = contacts.map(function(contact) {
-                return contact.nameFirst + ' ' + contact.nameLast;
-            });
-            return fullNames.join('\n');
-        }
+        
       
     };
 }
