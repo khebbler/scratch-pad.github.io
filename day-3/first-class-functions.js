@@ -142,7 +142,7 @@ E: N/A
 function allStringsPass(strings, test) {
     // looping over strings array
     for (var i = 0; i < strings.length; i++) {
-        // if string does not pass the test
+        // if string does not pass the test function
         if (!test(strings[i])) {
             // return a boolean false
             return false;

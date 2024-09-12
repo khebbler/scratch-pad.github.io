@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { reverse } = require("lodash");
+
 /**
  * 3: range()
  *
@@ -23,8 +25,28 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+
+    // initializing output array
+    var output = [];
+
+    // if the first argument is greater than the second
+    if (start >= end) {
+        // looping over the range in reverse order
+        for (var i = start; i >= end; i--) {
+            // pushing values to output array
+            output.push(i);
+        }
+    // if the second argument is greater than the first    
+    } else {
+        // looping over range
+        for (var i = start; i <= end; i++) {
+            // pushing values to output array
+            output.push(i);
+        }
+    }
+q   // returning output
+    return output;
+
     
     
     // YOUR CODE GOES ABOVE HERE //
