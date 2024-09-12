@@ -62,11 +62,11 @@ E: N/A
 */
 
 function createStartsWithFilter(startsWith) {
-
+    // returning a function that takes a String as a parameter
     return function(string) {
+        // testing whether given String starts with the startsWith char
         return string[0] === startsWith;
-        }
-
+        };
 }
 
 /** 
@@ -82,14 +82,12 @@ E: N/A
 */
 
 function createEndsWithFilter(endsWith) {
-
+    // returning a function that takes a string as a parameter
     return function(string) {
+        // testing whether given String ends with the endsWith character
         return string[string.length - 1] === endsWith;
       };
-    
-
-
-}
+};
 
 /** 
  * Given an Array of Strings and a Function designed to modify a String, 

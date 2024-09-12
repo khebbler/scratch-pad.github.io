@@ -44,7 +44,7 @@ function range(start, end) {
             output.push(i);
         }
     }
-q   // returning output
+   // returning output
     return output;
 
     
