@@ -62,6 +62,9 @@ function makeContactList() {
         length: function() {
             return contacts.length;
         },
+        addContact: function(contact) {
+            return contacts.push(contact);
+        }
         
       
     };

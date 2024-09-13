@@ -65,7 +65,7 @@ function createStartsWithFilter(startsWith) {
     // returning a function that takes a String as a parameter
     return function(string) {
         // testing whether given String starts with the startsWith char
-        return string[0] === startsWith;
+        return string[0].toLowerCase() === startsWith.toLowerCase();
         };
 };
 
@@ -85,7 +85,7 @@ function createEndsWithFilter(endsWith) {
     // returning a function that takes a string as a parameter
     return function(string) {
         // testing whether given String ends with the endsWith character
-        return string[string.length - 1] === endsWith;
+        return string[string.length - 1].toLowerCase() === endsWith.toLowerCase();
       };
 };
 
