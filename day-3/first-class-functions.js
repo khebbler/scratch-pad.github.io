@@ -67,7 +67,7 @@ function createStartsWithFilter(startsWith) {
         // testing whether given String starts with the startsWith char
         return string[0] === startsWith;
         };
-}
+};
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
