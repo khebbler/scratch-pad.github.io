@@ -47,7 +47,7 @@ function makeContact(id, nameFirst, nameLast) {
         nameFirst: nameFirst,
         nameLast: nameLast
     };
-} 
+}  
 
 
 function makeContactList() {
